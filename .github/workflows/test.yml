@@ -1,0 +1,20 @@
+name: test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  EnvA:
+    name: Env A
+    runs-on: ubuntu-latest
+    environment: A
+    steps:
+      - name: Mis
+        run: env
+  EnvB:
+    name: Env B
+    runs-on: ubuntu-latest
+    environment: B
+    steps:
+      - name: Mis
+        run: env
