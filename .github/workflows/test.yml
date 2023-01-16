@@ -8,6 +8,9 @@ jobs:
     name: Env A
     runs-on: ubuntu-latest
     environment: A
+    env:
+      SECRET: "${{ secrets.SECRET }}"
+      VARIABLE: "${{ env.VARIABLE }}"
     steps:
       - name: Mis
         run: env
@@ -15,6 +18,9 @@ jobs:
     name: Env B
     runs-on: ubuntu-latest
     environment: B
+    env:
+      SECRET: "${{ secrets.SECRET }}"
+      VARIABLE: "${{ env.VARIABLE }}"
     steps:
       - name: Mis
         run: env
