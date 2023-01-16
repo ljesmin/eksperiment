@@ -10,7 +10,7 @@ jobs:
     environment: A
     env:
       SECRET: "${{ secrets.SECRET }}"
-      VARIABLE: "${{ env.VARIABLE }}"
+      VARIABLE: "${{ VARIABLE }}"
     steps:
       - name: Mis
         run: env
@@ -20,7 +20,7 @@ jobs:
     environment: B
     env:
       SECRET: "${{ secrets.SECRET }}"
-      VARIABLE: "${{ env.VARIABLE }}"
+      VARIABLE: "${{ VARIABLE }}"
     steps:
       - name: Mis
         run: env
